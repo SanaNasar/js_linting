@@ -2,8 +2,14 @@ var _ = require("underscore"); // it goes and looks inside the node_modules fold
 
 var friends = ["John", "Jane"];
 
-var footastic = require("/lib/foo.js");
+console.log(fooObj);
 
-_.each.friends = function(friend) {
+_.each(friends, function(friend) {
   console.log(friend);
-};
+});
+
+// var footastic = require("./lib/foo.js");
+
+// _.each.friends = function(friend) {
+//   console.log(friend);
+// };
